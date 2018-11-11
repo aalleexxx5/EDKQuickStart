@@ -1,0 +1,106 @@
+.root{
+    background: #333;
+    text: lightgray;
+    foreground: #444;
+    accent: orange;
+    faint-accent: rgba(255,180,0,0.1);
+    -fx-border-color: lightgray;
+    -fx-border-style: none solid solid solid;
+    -fx-border-width: 2px;
+    -fx-text-fill: text;
+    -fx-focus-color: accent;
+    -fx-faint-focus-color: faint-accent;
+}
+
+.label{
+    -fx-text-fill: text;
+}
+
+.tab-pane{
+    -fx-background-color: background;
+    -fx-base: foreground;
+}
+
+.tab:selected .tab-label{
+    -fx-text-fill: accent;
+}
+
+.tab:selected{
+    -fx-background-color: background;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.tab-label{
+    -fx-text-fill: text;
+}
+
+.slider{
+    -fx-color: accent;
+    -fx-base: black;
+}
+
+#previewContainer{
+    -fx-border-color: lightgray;
+    -fx-border-style: solid;
+    -fx-border-radius: 5px;
+    -fx-border-width: 2px;
+}
+
+.button{
+    -fx-color: foreground;
+    -fx-background-radius: 20;
+    -fx-text-fill: text;
+}
+
+.toggle-button{
+    -fx-color: foreground;
+    -fx-background-radius: 20;
+    -fx-text-fill: text;
+}
+
+.toggle-button:selected{
+    -fx-background-color: background;
+    -fx-border-color: black;
+    -fx-border-radius: 20;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-text-fill: accent;
+}
+
+.corner {
+    -fx-background-color: background;
+}
+
+.hyperlink{
+    -fx-text-fill: accent;
+}
+
+.hyperlink:visited{
+    -fx-text-fill: text;
+}
+.list-view{
+    -fx-focus-color: transparent;
+}
+
+.list-cell{
+    -fx-text-fill: text;
+    -fx-selection-bar: accent;
+}
+
+.list-cell:even{
+    -fx-background: background;
+}
+
+.list-cell:odd{
+    -fx-background: foreground;
+}
+
+.dialog{
+    -fx-background-color: background;
+}
+
+.dialog:header *.header-panel{
+    -fx-fill: background;
+    -fx-background-color: background;
+}
